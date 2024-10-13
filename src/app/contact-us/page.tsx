@@ -1,10 +1,10 @@
 export const metadata = {
-    title: "Contact Us",
-    description: "Connect with Us for Support",
+    title: "Contact Peerwallet",
+    description: "Get in touch with Peerwallet's support team for any questions, issues, or feedback.",
     openGraph: {
-      title: "Contact Us",
-      description: "Connect with Us for Support",
-      url: "https://pwat.app/contact-us",
+      title: "Contact Peerwallet",
+      description: "Get in touch with Peerwallet's support team for any questions, issues, or feedback.",
+      url: "https://peerwallet.com/contact-us",
       siteName: "Peerwallet",
       images: [
         {
@@ -16,9 +16,9 @@ export const metadata = {
       type: "website",
     },
     icons: {
-      icon: "./assets/images/favicon.png", // Ensure your favicon.ico is in the public folder
-      shortcut: "./assets/images/favicon.png", // Optional: You can also add a shortcut icon
-      apple: "./assets/images/favicon.png", // Optional: Apple touch icon for iOS
+      icon: "./assets/images/favicon.png",
+      shortcut: "./assets/images/favicon.png", 
+      apple: "./assets/images/favicon.png", 
     },
   };
   

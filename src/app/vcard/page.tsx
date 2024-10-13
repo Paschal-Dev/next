@@ -8,7 +8,7 @@ export const metadata = {
       siteName: "Peerwallet",
       images: [
         {
-          url: "https://pwat.app/meta-banners/virtual-cards.png",
+          url: "https://pwat.app/meta-banners/virtua-cards.png",
           alt: "Peerwallet",
         },
       ],

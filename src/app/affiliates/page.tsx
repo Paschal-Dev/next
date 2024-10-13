@@ -4,7 +4,7 @@ export const metadata = {
     openGraph: {
         title: "Affiliate Program",
         description: "Learn about Peerwallet's affiliate program and how you can earn by promoting the platform.",
-        url: "https://pwat.app/affiliates",
+        url: "https://peerwallet.com/affiliates",
         siteName: "Peerwallet",
         images: [
             {
@@ -16,9 +16,9 @@ export const metadata = {
         type: "website",
     },
     icons: {
-        icon: "./assets/images/favicon.png", // Ensure your favicon.ico is in the public folder
-        shortcut: "./assets/images/favicon.png", // Optional: You can also add a shortcut icon
-        apple: "./assets/images/favicon.png", // Optional: Apple touch icon for iOS
+        icon: "./assets/images/favicon.png", 
+        shortcut: "./assets/images/favicon.png", 
+        apple: "./assets/images/favicon.png", 
     },
 };
 

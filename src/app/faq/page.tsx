@@ -1,14 +1,14 @@
 export const metadata = {
   title: "Frequently Asked Questions",
-  description: "Ask me anything!",
+  description: "Get answers to common questions about using Peerwallet, including account types, fees, payment methods, and how to integrate Peerwallet on your website.",
   openGraph: {
-    title: "Welcome to Peerwallet",
-    description: "Effortlessly send, receive, and spend payments.",
+    title: "Frequently Asked Questions",
+    description: "Get answers to common questions about using Peerwallet, including account types, fees, payment methods, and how to integrate Peerwallet on your website.",
     url: "https://pwat.app/",
     siteName: "Peerwallet",
     images: [
       {
-        url: "https://pwat.app/meta-banners/p2p.png",
+        url: "https://pwat.app/meta-banners/faq.png",
         alt: "Peerwallet",
       },
     ],
@@ -16,9 +16,9 @@ export const metadata = {
     type: "website",
   },
   icons: {
-      icon: "/src/app/assets/images/favicon.png", // Ensure your favicon.ico is in the public folder
-      shortcut: "/src/app/assets/images/favicon.png", // Optional: You can also add a shortcut icon
-      apple: "/src/app/assets/images/favicon.png", // Optional: Apple touch icon for iOS
+      icon: "/src/app/assets/images/favicon.png", 
+      shortcut: "/src/app/assets/images/favicon.png", 
+      apple: "/src/app/assets/images/favicon.png", 
     },
 };
 
