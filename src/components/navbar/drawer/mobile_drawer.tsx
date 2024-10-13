@@ -9,6 +9,8 @@ import List from "@mui/material/List";
 import ListItemText from "@mui/material/ListItemText";
 import Divider from "@mui/material/Divider";
 import Image from "next/image";
+import pwat from "../../../assets/images/peerwallet-logo.png";
+
 
 const MobileDrawer = ({ setMobileOpen, mobileOpen }: { setMobileOpen: any; mobileOpen: any }) => {
   const drawerItems = [
@@ -61,7 +63,7 @@ const MobileDrawer = ({ setMobileOpen, mobileOpen }: { setMobileOpen: any; mobil
         {/* Image handled from public folder */}
         <Box pb={1}>
           <Link href="/" passHref>
-            <Image src="/peerwallet-logo.svg" alt="PeerWallet" width={100} />
+            <Image src={pwat} alt="PeerWallet"/>
           </Link>
         </Box>
 

@@ -10,7 +10,7 @@ import Hidden from "@mui/material/Hidden";
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';  // Next.js router for navigation
 import { MenuOpenOutlined } from "@mui/icons-material";
-import pwat from "../../assets/images/auth/peerwallet-logo.svg";
+import pwat from "../../assets/images/peerwallet-logo.png";
 import MobileDrawer from "./drawer/mobile_drawer";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import Image from "next/image";
@@ -101,7 +101,7 @@ const MobileNavbar = () => {
                 component={Link}
                 href={"/"}
               >
-                <Image src={pwat} alt="" width={128} />
+                <Image src={pwat} alt="" />
               </Box>
               <Box display={"flex"} flexDirection={"row"}>
                 <Button
@@ -186,7 +186,7 @@ const MobileNavbar = () => {
                 justifyContent={"center"}
                 alignItems={"center"}
               >
-                <Image src={pwat} alt="" width={128} />
+                <Image src={pwat} alt=""/>
               </Box>
               <Box display={"flex"} flexDirection={"row"}>
                 <Box

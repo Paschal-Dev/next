@@ -17,7 +17,7 @@ import apple from "../../assets/images/footer/apple.png";
 import bgcover from "../../assets/images/footer/footertop-bg.png";
 import footercard from "../../assets/images/footer/footer-card.png";
 import bg from "../../assets/images/footer/footer-bg.png";
-import pwat from "../../assets/images/footer/peerwallet-logo.svg";
+import pwat from "../../assets/images/peerwallet-logo.png";
 import { theme } from "../../assets/themes/theme";
 import { ContainedBtn } from "../../components/buttons";
 

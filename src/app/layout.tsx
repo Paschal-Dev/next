@@ -2,8 +2,8 @@
 import localFont from "next/font/local";
 import "./globals.css";
 // import Link from "next/link";
-import Navbar from "@/components/navbar/navbar";
 import Footer from "@/components/footer";
+import NavbarLayout from "./navbar";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -15,6 +15,8 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+
+
 
 // export const metadata: Metadata = {
 //   title: "Create Next App",
@@ -30,7 +32,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {/* <nav> */}
-          {/* <Link href='/' style={{marginRight: 10}}>Home</Link>
+        {/* <Link href='/' style={{marginRight: 10}}>Home</Link>
           <Link href='./ContactUs' style={{marginRight: 10}}>Contact</Link>
           <Link href='./Faq' style={{marginRight: 10}}>Faq</Link>
           <Link href='./Vendors' style={{marginRight: 10}}>Vendors</Link>
@@ -38,10 +40,10 @@ export default function RootLayout({
           <Link href='./Voucher' style={{marginRight: 10}}>Voucher</Link>
           <Link href='./VirtualCard' style={{marginRight: 10}}>VCard</Link>
           <Link href='./Terms' style={{marginRight: 10}}>Terms</Link> */}
-          <Navbar/>
+       <NavbarLayout />
         {/* </nav> */}
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );

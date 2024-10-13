@@ -14,14 +14,14 @@ import MenuItem from "@mui/material/MenuItem";
 import { Icon } from "@iconify/react";
 import Image from 'next/image';
 import Link from 'next/link';
-import pwat from "../../assets/images/auth/peerwallet-logo.svg";
+import pwat from "../../assets/images/peerwallet-logo.png";
 import { useRouter } from 'next/navigation';  // Update here
 import { theme } from "../../assets/themes/theme"; 
 
 const pages = [
   { name: "How it works", link: "./how-it-works" },
   { name: "FAQ", link: "./faq" },
-  { name: "Virtual Card", link: "./VirtualCard" },
+  { name: "Virtual Card", link: "./vcard" },
   { name: "Sellers", link: "./sell" },
   { name: "PWAT", link: "./pwat" },
   { name: "Knowledge base", link: "./doc" },
