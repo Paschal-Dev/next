@@ -42,7 +42,7 @@ export default function Footer(): React.JSX.Element {
     { label: "Terms & Condition", href: "./terms" },
     { label: "Privacy Policy", href: "./policy" },
     { label: "Login", href: "/login" },
-    { label: "Redeem Voucher", href: "./shop/voucher" },
+    { label: "Redeem Voucher", href: "./shop/redeem-v" },
   ];
 
   const footerMenus3 = [
