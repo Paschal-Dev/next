@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import { Box, Button, Grid, Typography } from "@mui/material";
 import { Icon } from "@iconify/react";
