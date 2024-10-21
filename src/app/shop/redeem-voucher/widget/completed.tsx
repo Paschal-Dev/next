@@ -12,12 +12,13 @@ import {
   styled,
   TableContainer,
 } from "@mui/material";
-import { theme } from "../../../assets/themes/theme";
-import VIcon from "../../../assets/images/rv/rv-voucher-icon.png";
+import { theme } from "../../../../assets/themes/theme";
+import VIcon from "../../../../assets/images/rv/rv-voucher-icon.png";
 import { Icon } from "@iconify/react";
 import Image from "next/image";
 
-// Custom styles for the table container
+// Custom styles for the Table //
+
 const StyledTableContainer = styled(TableContainer)(() => ({
   borderRadius: 24,
   overflow: "hidden",
@@ -66,15 +67,15 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
   },
 }));
 
-interface ConfirmProps {
-  onConfirm: () => void;
-  onBack: () => void;
+// End custom styles for the Table //
+
+interface CompletedProps {
+  onCompleted: () => void;
 }
 
-export default function Confirm({
-  onConfirm,
-  onBack,
-}: ConfirmProps): React.JSX.Element {
+export default function Completed({
+  onCompleted,
+}: CompletedProps): React.JSX.Element {
   return (
     <Box display={"flex"} flexDirection={"column"} gap={2}>
       <Box display={"flex"} flexDirection={"column"} gap={1}>
@@ -198,27 +199,10 @@ export default function Confirm({
                 borderRadius: 3,
                 boxShadow: "1px 1px 10px rgba(229, 245, 253)",
               }}
-              onClick={onBack}
+              onClick={onCompleted}
             >
               <Icon icon="mdi:arrow-back" fontSize={18} />
               Go back
-            </Button>
-          </Grid>
-          <Grid item xs={8}>
-            <Button
-              variant="contained"
-              fullWidth
-              color="primary"
-              sx={{
-                fontSize: 14,
-                fontWeight: 600,
-                padding: 1,
-                borderRadius: 3,
-                boxShadow: "1px 1px 10px rgba(229, 245, 253)",
-              }}
-              onClick={onConfirm}
-            >
-              Validate Voucher
             </Button>
           </Grid>
         </Grid>

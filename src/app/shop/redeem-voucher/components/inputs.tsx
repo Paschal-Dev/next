@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 import React from "react";
-import { theme } from "../../../assets/themes/theme";
+import { theme } from "../../../../assets/themes/theme";
 
 interface TextInputProps {
   id: string;

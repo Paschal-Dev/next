@@ -3,7 +3,7 @@ import { Box } from "@mui/material";
 import Form from "./form";
 import Confirm from "./confirm";
 import Completed from "./completed";
-import { MediaProps } from "../../../utils/utils";
+import { MediaProps } from "../../../../utils/utils";
 
 export default function Widget({ deviceType }: MediaProps): React.JSX.Element {
   const [step, setStep] = useState(1);

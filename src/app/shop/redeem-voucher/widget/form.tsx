@@ -1,8 +1,8 @@
 import React from "react";
 import { Box, Button, Grid, Typography } from "@mui/material";
 import { SelectInput, TextInput } from "../components/inputs";
-import { theme } from "../../../assets/themes/theme";
-import VIcon from "../../../assets/images/rv/rv-voucher-icon.png";
+import { theme } from "../../../../assets/themes/theme";
+import VIcon from "../../../../assets/images/rv/rv-voucher-icon.png";
 import Image from "next/image";
 // import { MediaProps } from "../../../utils/utils";
 

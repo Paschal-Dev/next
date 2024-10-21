@@ -2,12 +2,12 @@
 
 import React, { useEffect, useState } from "react";
 import { Box, Grid, Typography, useMediaQuery } from "@mui/material";
-import { theme } from "../../assets/themes/theme";
+import { theme } from "../../../assets/themes/theme";
 import Widget from "./widget/widget";
-import RVImage from "../../assets/images/rv/redeem-voucher.png";
-import topBg from "../../assets/images/rv/rv-top-bg.png";
-import bg from "../../assets/images/rv/rv-bg.png";
-import line from "../../assets/images/rv/rv-line.png";
+import RVImage from "../../../assets/images/rv/redeem-voucher.png";
+import topBg from "../../../assets/ima ges/rv/rv-top-bg.png";
+import bg from "../../../assets/images/rv/rv-bg.png";
+import line from "../../../assets/images/rv/rv-line.png";
 import Image from "next/image";
 
 export default function RedeemVoucher(): React.JSX.Element {
