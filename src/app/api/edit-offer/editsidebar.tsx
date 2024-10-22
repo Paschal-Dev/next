@@ -8,6 +8,7 @@ import {
   useMediaQuery,
 } from "@mui/material";
 import bar from "../../../assets/images/api/bar.png";
+import Image from "next/image";
 
 const drawerWidth = "100%";
 
@@ -197,7 +198,7 @@ const EditOffersSidebar: React.FC<SidebarProps> = ({ anchor }) => {
             background: "linear-gradient(0deg, #005677 0%, #009FDD 100%)",
           }}
         >
-          <img src={bar} alt="" style={{ width: "95%", marginTop: -70 }} />
+          <Image src={bar} alt="" style={{ width: "95%", marginTop: -70, height:"auto" }} />
           <Typography
             variant="body2"
             fontWeight={900}
