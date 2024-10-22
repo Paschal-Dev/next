@@ -24,9 +24,8 @@ export const metadata = {
   },
 };
 
-import { MediaProps } from "@/utils/utils";
-import BlogsPage from "./index";
+import BlogClientPage from "./index";
 
-export default function Blog({ deviceType }: MediaProps): React.JSX.Element {
-  return <BlogsPage deviceType={deviceType} />;
+export default function Blog(): React.JSX.Element {
+  return <BlogClientPage deviceType={""} />
 }

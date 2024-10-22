@@ -17,7 +17,7 @@ import headImage from "../../assets/images/blog/blog-head-image.png";
 import { MediaProps } from "../../utils/utils";
 import Image from "next/image";
 
-export default function BlogsPage({
+export default function BlogClientPage({
   deviceType,
 }: MediaProps): React.JSX.Element {
   const [page, setPage] = useState<number>(1);
