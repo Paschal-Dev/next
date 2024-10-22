@@ -86,7 +86,7 @@ export default function Main(): React.JSX.Element {
                 fontWeight={400}
               >
                 Some of these calls require you become a Merchant on Peerwallet,
-                If you are not, you <br />
+                If you aren't, you <br />
                 can apply or learn more
                 <ThemeProvider theme={theme}>
                   <Link

@@ -1,4 +1,3 @@
-"use client";
 import { Box, Container, Grid, Link, Typography, useMediaQuery } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import MainSideBar from "../component/mainsidebar";
@@ -1796,7 +1795,7 @@ export default function VirtualCardIntegration(): React.JSX.Element {
                 my={2}
               >
                 <span style={{ fontWeight: 500 }}>Failed:</span>
-                means the users does not have not enough to pay the
+                means the user's doesn't have not enough to pay the
                 subscription, you should further delete or freeze the card from
                 your end
               </Typography>

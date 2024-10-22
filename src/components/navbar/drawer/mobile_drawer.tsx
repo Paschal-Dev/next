@@ -143,7 +143,7 @@ const MobileDrawer = ({ setMobileOpen, mobileOpen }: { setMobileOpen: any; mobil
           }}
           onClick={() => {
             setMobileOpen(!mobileOpen);
-            router.push("/signup");
+            router.push("/reg");
           }}
         >
           Register
