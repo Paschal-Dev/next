@@ -7,16 +7,32 @@ import {
   DialogContent,
   Grid,
   Typography,
+  useMediaQuery,
 } from "@mui/material";
 import { Icon } from "@iconify/react";
 import circle from "../../../assets/images/home/circle.png";
 import money from "../../../assets/images/home/money-logo.png";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import PwatSpin from "@/components/pwat-spin";
 import Image from "next/image";
+import { theme } from "@/assets/themes/theme";
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export default function RecievePayment({ deviceType }: any): React.JSX.Element {
+export default function RecievePayment(): React.JSX.Element {
+
+  const [deviceType, setDeviceType] = useState("mobile");
+  const mobile = useMediaQuery(theme.breakpoints.only("xs"));
+  const tablet = useMediaQuery(theme.breakpoints.down("md"));
+  
+   useEffect(() => {
+       if (mobile) {
+        setDeviceType("mobile");
+      } else if (tablet) {
+       setDeviceType("tablet");
+       } else {
+        setDeviceType("pc");
+      }
+  }, [mobile, tablet]);
+
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => {

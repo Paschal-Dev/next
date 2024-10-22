@@ -1,10 +1,27 @@
-import { Box, Container, Grid, IconButton, Typography } from "@mui/material";
+"use client";
+import { Box, Container, Grid, IconButton, Typography, useMediaQuery } from "@mui/material";
 import { Icon } from "@iconify/react";
 import dollar from "../../../assets/images/home/dollar.svg";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export default function HowItWorks({ deviceType }: any): React.JSX.Element {
+import { theme } from "@/assets/themes/theme";
+
+export default function HowItWorks(): React.JSX.Element {
+
+  const [deviceType, setDeviceType] = useState("mobile");
+  const mobile = useMediaQuery(theme.breakpoints.only("xs"));
+  const tablet = useMediaQuery(theme.breakpoints.down("md"));
+  
+   useEffect(() => {
+       if (mobile) {
+        setDeviceType("mobile");
+      } else if (tablet) {
+       setDeviceType("tablet");
+       } else {
+        setDeviceType("pc");
+      }
+  }, [mobile, tablet]);
+
   return (
     <Box>
       <Container

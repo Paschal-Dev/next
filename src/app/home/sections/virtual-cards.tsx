@@ -7,16 +7,34 @@ import {
   DialogContent,
   Grid,
   Typography,
+  useMediaQuery,
 } from "@mui/material";
 import card from "../../../assets/images/home/card.svg";
 import bgcover from "../../../assets/images/home/bgcover.png";
 import { Icon } from "@iconify/react";
 import knot from "../../../assets/images/home/knot.png";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import sphere from "../../../assets/images/home/sphere.png";
 import Image from "next/image";
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export default function VirtualCards({ deviceType }: any): React.JSX.Element {
+import { theme } from "@/assets/themes/theme";
+
+
+export default function VirtualCards(): React.JSX.Element {
+
+  const [deviceType, setDeviceType] = useState("mobile");
+  const mobile = useMediaQuery(theme.breakpoints.only("xs"));
+  const tablet = useMediaQuery(theme.breakpoints.down("md"));
+  
+   useEffect(() => {
+       if (mobile) {
+        setDeviceType("mobile");
+      } else if (tablet) {
+       setDeviceType("tablet");
+       } else {
+        setDeviceType("pc");
+      }
+  }, [mobile, tablet]);
+
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => {
@@ -36,7 +54,7 @@ export default function VirtualCards({ deviceType }: any): React.JSX.Element {
       <Box mt={3} bgcolor={"#FFFFFF"} borderRadius={8}>
         <Grid container>
           <Grid item md={6} xs={12} pl={5} pt={5}>
-            <Image src={card} alt="" style={{ width: "100%" }} />
+            <Image src={card} alt="" style={{ width: "100%", height:"100%" }} />
           </Grid>
           <Grid
             item

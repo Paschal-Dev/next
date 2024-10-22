@@ -6,13 +6,14 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/pagination"; // Import pagination styles
 // import "../../../App.css"; // Import custom styles
+
+import { Autoplay, EffectFade, Pagination } from "swiper/modules";
 import SendMoney from "../components/send-money";
 import RecievePayment from "../components/recieve-payment";
-import { Autoplay, EffectFade, Pagination } from "swiper/modules";
 
 type SwiperType = any;
 
-const Carouselg = ({ deviceType }: any) => {
+const Carouselg = () => {
   const swiperRef = useRef<SwiperType | null>(null);
 
   useEffect(() => {
@@ -46,10 +47,10 @@ const Carouselg = ({ deviceType }: any) => {
       style={{ backgroundColor: "#000"  }}
     >
       <SwiperSlide>
-        <SendMoney deviceType={deviceType} />
+        <SendMoney/>
       </SwiperSlide>
       <SwiperSlide>
-        <RecievePayment deviceType={deviceType} />
+        <RecievePayment />
       </SwiperSlide>
     </Swiper>
   );

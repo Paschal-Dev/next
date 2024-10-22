@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+"use client";
 import { Box, Container, Grid, Link, Typography, useMediaQuery } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import MainSideBar from "../component/mainsidebar";

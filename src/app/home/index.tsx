@@ -193,7 +193,7 @@ export default function HomePage(): React.JSX.Element {
             </Grid>
             <Grid item xs={12} md={5} position={"relative"}>
               <Box display={deviceType === "mobile" ? "none" : "flex"}>
-                <Image src={pwat} alt="" width={500} height={500} />
+                <Image src={pwat} alt=""  style={{width:"100%", height:"100%"}} />
                 <PwatSpin width={"48%"} left={"37%"} bottom={"5%"} />
               </Box>
             </Grid>
