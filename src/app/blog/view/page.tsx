@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import { useSearchParams, useRouter, notFound } from "next/navigation";
 import { Box, Container, Grid, Typography, useMediaQuery } from "@mui/material";
 import { blogPosts, BlogPostProps } from "../data";
@@ -10,7 +10,7 @@ import RecentTopics from "../components/recent-topics";
 import OtherTopics from "../components/other-topics";
 import { theme } from "../../../assets/themes/theme";
 
-export default function ReadBlogPage(): React.JSX.Element {
+function ReadBlogContent(): React.JSX.Element {
   const router = useRouter();
   const searchParams = useSearchParams();
   const t = searchParams.get("t");
@@ -102,5 +102,13 @@ export default function ReadBlogPage(): React.JSX.Element {
         <OtherTopics currentPostId={post.id} />
       </Box>
     </Box>
+  );
+}
+
+export default function ReadBlogPage(): React.JSX.Element {
+  return (
+    <Suspense fallback={<Typography variant="h6">Loading...</Typography>}>
+      <ReadBlogContent />
+    </Suspense>
   );
 }
