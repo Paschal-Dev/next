@@ -19,12 +19,12 @@ import { useRouter } from 'next/navigation';  // Update here
 import { theme } from "../../assets/themes/theme"; 
 
 const pages = [
-  { name: "How it works", link: "./how-it-works" },
-  { name: "FAQ", link: "./faq" },
-  { name: "Virtual Card", link: "./vcard" },
-  { name: "Sellers", link: "./sell" },
-  { name: "PWAT", link: "./pwat" },
-  { name: "Knowledge base", link: "./doc" },
+  { name: "How it works", link: "/how-it-works" },
+  { name: "FAQ", link: "/faq" },
+  { name: "Virtual Card", link: "/vcard" },
+  { name: "Sellers", link: "/sell" },
+  { name: "PWAT", link: "/pwat" },
+  { name: "Knowledge base", link: "/doc" },
 ];
 
 const languages = [

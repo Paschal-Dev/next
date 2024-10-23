@@ -28,42 +28,42 @@ export default function Footer(): React.JSX.Element {
   const tablet = useMediaQuery(theme.breakpoints.down("md"));
 
   const footerMenus1 = [
-    { label: "Developers", href: "./dev" },
-    { label: "How it Works", href: "./how-it-works" },
-    { label: "Contact Us", href: "./contact-us" },
-    { label: "API", href: "./api" },
-    { label: "Affiliates", href: "./affiliates" },
-    { label: "Shop", href: "./shop" },
+    { label: "Developers", href: "/dev" },
+    { label: "How it Works", href: "/how-it-works" },
+    { label: "Contact Us", href: "/contact-us" },
+    { label: "API", href: "/api" },
+    { label: "Affiliates", href: "/affiliates" },
+    { label: "Shop", href: "/shop" },
   ];
 
   const footerMenus2 = [
-    { label: "Knowledge base", href: "./doc" },
+    { label: "Knowledge base", href: "/doc" },
     { label: "Blog", href: "/blog" },
-    { label: "Terms & Condition", href: "./terms" },
-    { label: "Privacy Policy", href: "./policy" },
+    { label: "Terms & Condition", href: "/terms" },
+    { label: "Privacy Policy", href: "/policy" },
     { label: "Login", href: "/login" },
-    { label: "Redeem Voucher", href: "./shop/redeem-v" },
+    { label: "Redeem Voucher", href: "/shop/redeem-v" },
   ];
 
   const footerMenus3 = [
-    { label: "Sellers", href: "./sell" },
-    { label: "Send Money", href: "./send" },
-    { label: "Vendors", href: "./ven" },
-    { label: "Merchant", href: "./mer" },
-    { label: "Virtual Cards", href: "./vcard" },
-    { label: "Vouchers", href: "./voucher" },
+    { label: "Sellers", href: "/sell" },
+    { label: "Send Money", href: "/send" },
+    { label: "Vendors", href: "/ven" },
+    { label: "Merchant", href: "/mer" },
+    { label: "Virtual Cards", href: "/vcard" },
+    { label: "Vouchers", href: "/voucher" },
   ];
 
   const mobileFooterMenus1 = [
     { label: "Login", href: "/login" },
-    { label: "How it Works", href: "./how-it-works" },
-    { label: "API", href: "./api" },
+    { label: "How it Works", href: "/how-it-works" },
+    { label: "API", href: "/api" },
     { label: "Knowledge base", href: "/doc" },
     { label: "Blog", href: "/blog" },
-    { label: "Contact Us", href: "./contact-us" },
+    { label: "Contact Us", href: "/contact-us" },
     { label: "Developers", href: "/dev" },
-    { label: "Terms & Condition", href: "./terms" },
-    { label: "Privacy Policy", href: "./policy" },
+    { label: "Terms & Condition", href: "/terms" },
+    { label: "Privacy Policy", href: "/policy" },
   ];
 
   const mobileFooterMenus2 = [
