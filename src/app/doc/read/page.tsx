@@ -1,9 +1,9 @@
 "use client";
 
-import React from "react";
+import React, { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { Box, Container, Grid, Typography } from "@mui/material";
-import { knowledgeBase } from "../data"; 
+import { knowledgeBase } from "../data";
 import Image from "next/image";
 import PostDetail from "../components/doc-content";
 import RelatedPosts from "../components/related-doc";
@@ -13,11 +13,10 @@ import blogPrev2 from "../../../assets/images/kb/kb-blog2.png";
 import blogPrev3 from "../../../assets/images/kb/kb-blog3.png";
 import { theme } from "../../../assets/themes/theme";
 
-export default function PostDetailPage():React.JSX.Element {
+function PostDetailContent() {
   const searchParams = useSearchParams();
   const title = searchParams.get("title");
 
-  // Find the post by matching the slug with the query parameter
   const post = knowledgeBase
     .flatMap((category) => category.posts)
     .find((post) => post.slug === title);
@@ -109,5 +108,13 @@ export default function PostDetailPage():React.JSX.Element {
         </Container>
       </Box>
     </Box>
+  );
+}
+
+export default function PostDetailPage(): React.JSX.Element {
+  return (
+    <Suspense fallback={<Typography variant="h6">Loading...</Typography>}>
+      <PostDetailContent />
+    </Suspense>
   );
 }
