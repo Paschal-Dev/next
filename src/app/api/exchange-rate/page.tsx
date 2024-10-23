@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+"use client";
 import {
   Box,
   Container,
@@ -6,14 +7,31 @@ import {
   Link,
   ThemeProvider,
   Typography,
+  useMediaQuery,
 } from "@mui/material";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { theme } from "../../../assets/themes/theme";
 import MainSideBar from "../component/mainsidebar";
 import ExchangeRateSidebar from "./exchangeratesidebar";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export default function ExchangeRate({ deviceType }: any): React.JSX.Element {
+export default function ExchangeRate(): React.JSX.Element {
+
+  const [deviceType, setDeviceType] = useState("mobile");
+  const mobile = useMediaQuery(theme.breakpoints.only("xs"));
+  const tablet = useMediaQuery(theme.breakpoints.down("md"));
+  
+   useEffect(() => {
+       if (mobile) {
+        setDeviceType("mobile");
+      } else if (tablet) {
+       setDeviceType("tablet");
+       } else {
+        setDeviceType("pc");
+      }
+  }, [mobile, tablet]);
+
+
   return (
     <Box>
       {/* <Box
