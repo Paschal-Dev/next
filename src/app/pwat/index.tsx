@@ -158,11 +158,11 @@ export default function PWAT(): React.JSX.Element {
                 justifyContent="center"
                 alignItems="center"
               >
-                <PwatSpin width={500}  />
-                <Box position={"absolute"} top={-3} right={0}>
+                <PwatSpin width={300} />
+                <Box width={'100%'} height={"34vh"} display={"flex"} alignItems={"end"} justifyContent={"center"} position={"absolute"} top={4}>
                   <Image
                     src={rectangle}
-                    style={{ width: "73%", height: "auto" }} alt={""} />
+                    style={{ width: "80%", height:"100%"}} alt=""/>
                 </Box>
               </Box>
             </Grid>
