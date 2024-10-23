@@ -19,9 +19,9 @@ export const metadata = {
     type: "website",
   },
   icons: {
-      icon: "/src/app/assets/images/favicon.png", // Ensure your favicon.ico is in the public folder
-      shortcut: "/src/app/assets/images/favicon.png", // Optional: You can also add a shortcut icon
-      apple: "/src/app/assets/images/favicon.png", // Optional: Apple touch icon for iOS
+      icon: "/src/app/assets/images/favicon.png", 
+      shortcut: "/src/app/assets/images/favicon.png",
+      apple: "/src/app/assets/images/favicon.png", 
     },
 };
 

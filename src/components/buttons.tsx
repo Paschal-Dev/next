@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useEffect, useState } from "react";
 import Button from "@mui/material/Button";
 import { Icon } from "@iconify/react";
@@ -154,7 +156,6 @@ export function SearchBtn(props: ButtonProps): React.JSX.Element {
         textTransform: "capitalize",
         fontWeight: 500,
         fontSize: deviceType === "mobile" ? 14 : 20,
-        width: "auto",
         color: "#fff",
         px: deviceType === "mobile" ? 4 : 2,
         border: `2px solid ${theme.palette.primary.main}`,
@@ -167,7 +168,7 @@ export function SearchBtn(props: ButtonProps): React.JSX.Element {
     >
       <Icon
         icon="material-symbols:search"
-        fontSize={24}
+        fontSize={20}
         style={{ marginRight: 5 }}
       />
       {text}

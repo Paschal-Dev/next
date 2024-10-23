@@ -30,10 +30,10 @@ export default function PwatSpin(props: PwatSpinProps): React.JSX.Element {
       <Image
         src={coinFrame}
         alt=""
-        width={200}
-        height={200}
         style={{
           animation: "spin 15s linear infinite",
+          width: "100%",
+          height: "auto",
         }}
       />
       <style>
@@ -44,7 +44,11 @@ export default function PwatSpin(props: PwatSpinProps): React.JSX.Element {
           }
         `}
       </style>
-      <Image src={coin} alt="" width={200} height={200} style={{ position: "absolute" }} />
+      <Image
+        src={coin}
+        alt=""
+        style={{ position: "absolute", width: "100%", height: "auto" }}
+      />
     </Box>
   );
 }
